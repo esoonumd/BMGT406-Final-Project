@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Make a Comment</title>
+	<link type="text/css" href='css/layout.css' rel="stylesheet">
+	<link rel="shortcut icon" href="images/umd.jpeg" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="container">
+	<!-- #header -->
+	<header class="container">
+	</header>
+	<!-- /#header -->
+	<!-- #navigation -->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"><a class="nav-link" href="http://www.umd.edu" title="UMCP" rel="home">UMCP</a></li>
+				<li class="nav-item active"><a class="nav-link" href="./InsertUsers.html" title="Insert Users" rel="IU">Insert Users</a></li>
+				<li class="nav-item active"><a class="nav-link" href="./InsertEvents.html" title="Insert Events" rel="IE">Insert Events</a></li>
+			</ul>
+		</div>
+	</nav>
+	<article class="container">
+		<div class="article-border">
+			<form id="wholeForm" action="ProcessInsertComments.php" method="get">
+				<fieldset>
+					<legend><em>Post a Comment</em></legend>
+					<label for="email1">Your Email: </label><input type="text" name="email1" id="email1" />
+					<label for="email2">Player Email: </label><input type="text" name="email2" id="email2" /><br /><br />
+					<textarea class="form-control" rows="3" name="comment" id="comment" placeholder="Leave a comment..."></textarea><br />
+				</fieldset>
+				<input type="reset" />
+				<input type="submit" value="Add Comment" />
+				</fieldset>
+			</form>
+		</div>
+	</article>
+	<footer>
+		<div class="footer-text">
+			© 2016
+			<a href="#">Smith School</a>.
+			All Rights Reserved.
+			<br />
+		</div>
+		<div id="badges">
+			<!-- #html5-css3 logo -->
+			<div id="html5-icon">
+				<a href="http://www.w3.org/html/logo/" target="_blank">
+					<img src="./images/html5-css3-logo.png" width="133" height="64" alt="HTML5 image&#39;" />
+				</a>
+			</div>
+			<!-- #facebook like button -->
+			<div id="fb-like">
+				<iframe src="https://www.facebook.com/plugins/like.php?href=http://www.umiacs.umd.edu/~louiqa/2016/BMGT406/" style="border:none; width:450px; height:80px"></iframe>
+			</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>UMD Services Registration</title>
+  <link type="text/css" href='css/layout.css' rel="stylesheet">
+  <link rel="shortcut icon" href="images/umd.jpeg" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="container">
+  <!-- #header -->
+  <header class="container">
+    <div id="logo">
+      <a href="./" title="Home" rel="home"><img src="images/umd.jpeg" alt="Logo" /></a>
+    </div>
+    <div id="site-name">
+      Smith Connect
+    </div>
+    <div id="site-slogan">
+      Social Networking for Smith School
+    </div>
+	</header>
+	<!-- /#header -->
+
+  <!-- #navigation -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"><a class="nav-link" href="./" title="Home" rel="home">Home</a></li>
+        <li class="nav-item active"><a class="nav-link" href="my-enhanced-profile.html" title="My Profile">My Profile</a></li>
+        <li class="nav-item active"><a class="nav-link" href="register bootstrap.html" title="register">Register</a></li>
+        <li class="nav-item active"><a class="nav-link" href="utilities.html" title="Utilities">Utilities</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /#navigation -->
+    
+  <!-- OK so type - same, label = for -->
+
+	<!-- #content -->
+	<article class="container">
+    <form action="./dataProcessing/formSummary.php" method="get">
+      <fieldset class="card-body border border-secondary">
+        <legend>Customer Information</legend>
+        <div class="form-group row">
+          <label for="firstname" class="col-sm-2 col-form-label">Firstname*</label>
+          <div class="col-xs-4">
+            <input type="text" class="form-control" id="firstname" >
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="lastname" class="col-sm-2 col-form-label">Lastname*</label>
+          <div class="col-xs-4">
+            <input type="text" class="form-control" id="lastname">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="email" class="col-sm-2 col-form-label">Email*</label>
+          <div class="col-xs-4">
+            <input type="text" class="form-control" id="email">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="address" class="col-sm-2 col-form-label">Address*</label>
+          <div class="col-xs-4">
+            <input type="text" class="form-control" id="address" placeholder=>
+          </div>
+        </div>
+      </fieldset>
+      <br>
+      <fieldset class="card-body border border-secondary">
+        <legend>Order Information</legend>
+        <fieldset class="card-body border border-secondary">
+          <legend>Services</legend>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label">Check all that apply:*</label>
+          </div>
+          <div class="form-group row">
+            <div class="form-check form-check-inline">
+
+              <label class="form-check-label" for="dining">Dining</label>
+              <input class="form-check-input" type="checkbox" name="dining" id="dining" value="dinig">
+              
+            </div>
+            <div class="form-check form-check-inline">
+              <label class="form-check-label" for="books">Books</label>
+              <input class="form-check-input" type="checkbox" name="books" id="books" value="books">
+              
+            </div>
+            <div class="form-check form-check-inline">
+              <label class="form-check-label" for="sports">Sports</label>
+              <input class="form-check-input" type="checkbox" name="sports" id="sports" value="sports">
+              
+            </div>
+            
+          </div>
+        </fieldset>
+        <br>
+        
+        <fieldset class="card-body border border-secondary">
+          <legend>Plan</legend>
+          <div class="form-group row">
+            <div class="form-check form-check-inline">
+              
+              <label class="form-check-label" for="oneYearPlan">One-year</label>
+              <input class="form-check-input" type="radio" name="plan" id="oneYearPlan" value="oneYearPlan">
+            </div>
+            <div class="form-check form-check-inline">
+              
+              <label class="form-check-label" for="twoYearPlan">Two-year</label>
+              <input class="form-check-input" type="radio" name="plan" id="twoYearPlan" value="twoYearPlan">
+            </div>
+            <div class="form-check form-check-inline">
+              
+              <label class="form-check-label" for="otherPlan">Other</label>
+              <input class="form-check-input" type="radio" name="plan" id="otherPlan" value="otherPlan">
+            </div>
+            
+          </div>
+        </fieldset>
+        <br>
+        
+        <fieldset class="card-body border border-secondary">
+          <legend>Payment Method</legend>
+          <div class="form-group col-md-4" type="select" name="payment">
+              <select id="inputState" class="form-control">
+                <option value="creditCard" selected>Credit Card</option>
+                <option value="billMe" >Bill Me<option>
+              </select>
+            </div>
+          <div class="form-group row">
+            
+          <label for="inputPassword" class="col-form-label">Credit Card Info (if paying with credit card)</label>
+          <div class="col">
+            <div class="form-group row">
+              <div class="col">
+                <input type="text" class="form-control" id="inputPassword" name="firstFourDigits" >
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" id="inputPassword" name="secondFourDigits">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" id="inputPassword" name="thirdFourDigits">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" id="inputPassword" name="fourthFourDigits">
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        <div class="form-group row">
+          <div class="col-sm-3">
+            <label for="inputPassword" class=" col-form-label">Expiration Date:</label>
+          </div>
+          <div class="col">
+            <div class="form-group row">
+              <div class="col-sm-2">
+                <label for="month" class="col-sm-2 col-form-label">Month:</label>
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" id="month" name="month">
+              </div>
+              <div class="col-sm-2">
+                <label for="year" class="col-sm-2 col-form-label">Year:</label>
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" id="year" name="year">
+              </div>
+            </div>
+          </div> 
+
+        </fieldset>
+        <br>
+
+        <fieldset class="card-body border border-secondary">
+          <legend>Order Comments (Optional)</legend>
+          <textarea class="form-control" rows="3" id="comment"></textarea>
+        </fieldset>
+      </fieldset>
+
+      <br>
+      <button type="reset" class="btn btn-primary">Reset</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </article>
+
+
+	<!-- #footer -->
+	<footer>
+
+	</footer>
+	<!-- /#footer -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
